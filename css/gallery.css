@@ -3,12 +3,15 @@
 	/*max-width: 1050px;*/
 }
 
-.gallery .col-lg-2.thumb:first-child
+.gallery .thumb:first-child
 {
 	margin-left: 0;
 }
-.gallery .col-lg-2.thumb
-{
-	width: 20%;
-	margin-left: 0px;
+
+@media (min-width: 1200px) {
+	.gallery .col-lg-2
+	{
+		width: 20%;
+		margin-left: 0px;
+	}
 }
