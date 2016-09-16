@@ -27,15 +27,16 @@ body, h1, h2 {
     text-transform: uppercase;
 }
 
-.container {
+.carousel .container {
     position: relative;
+    height: 100vh;
 }
 
 .carousel-caption {
     position: absolute;
-    top: 450px;
+    top: 40%;
     left: 20px;
-    width: 518px;
+    width: 50%;
 }
 
 .navbar-inverse, .navbar {
@@ -150,10 +151,11 @@ h2 {
     color: #fff;
 }
 
-.about-theater {
+p {
     text-align: justify;
     line-height: 160%;
     font-size: 16px;
+    padding-bottom: 15px;
 }
 
 hr {
@@ -187,11 +189,11 @@ span {
     margin-bottom: 60px;
 }
 
-.partner, .contact, .roots {
+.partners h2, .contacts h2, .roots h2 {
     color: #002b4f;
 }
 
-.contacts {
+.contacts .item {
     text-align: left;
     padding-right: 150px;
 }
@@ -210,26 +212,24 @@ footer img {
     border: transparent;
 }
 
-.contacts {
+.contacts .item {
     font-family: "Raleway-SemiBold", sans-serif;
     font-size: 16px;
 }
 
-.contacts span {
+.contacts .item span {
     font-family: "Raleway-Regular", sans-serif;
     font-size: 18px;
 }
 
-.root {
-    font-size: 16px;
-}
-
 @media (min-width: 1200px) {
+    /*
     .carousel-caption {
         top: 300px;
         left: 60px;
         width: 480px;
     }
+    */
 }
 
 /*
@@ -248,5 +248,67 @@ footer img {
 
     .navbar-inverse, .navbar {
         font-size: 16px;
+    }
+}
+
+.gallery .thumb:first-child {
+    margin-left: 0;
+}
+
+.gallery span {
+    display: block;
+}
+
+.row.gallery {
+    padding-bottom: 45px;
+}
+
+.partners a {
+    display: block;
+    width: 166px;
+    height: 40px;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+@media (min-width: 1200px) {
+    .gallery .col-lg-2 {
+        width: 20%;
+        margin-left: 0px;
+    }
+
+    .partners .col-lg-2 {
+        width: 20%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .gallery .stub {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .container {
+        margin: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    .gallery hr {
+        margin: auto;
+    }
+
+    .gallery .thumb {
+        text-align: center;
     }
 }
