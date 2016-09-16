@@ -1,18 +1,18 @@
 @font-face {
     font-family: Proxima_Nova_Bold; 
-    src: url(fonts/Proxima_Nova_Bold.otf); 
+    src: url(../fonts/Proxima_Nova_Bold.otf);
 }
 @font-face {
     font-family: Proxima_Nova_Regular; 
-    src: url(fonts/Proxima_Nova_Regular.otf); 
+    src: url(../fonts/Proxima_Nova_Regular.otf);
 }
 @font-face {
     font-family: Raleway-Regular; 
-    src: url(fonts/Raleway-Regular.ttf); 
+    src: url(../fonts/Raleway-Regular.ttf);
 }
 @font-face {
     font-family: Raleway-SemiBold; 
-    src: url(fonts/Raleway-SemiBold.ttf); 
+    src: url(../fonts/Raleway-SemiBold.ttf);
 }
 body, h1, h2{
 	font-family: "Proxima_Nova_Regular", sans-serif;
@@ -38,6 +38,7 @@ body, h1, h2{
    background: transparent;
    font-size: 18px;
    font-family: "Proxima_Nova_Bold", sans-serif;
+	letter-spacing: 1.8px;
 }
 .social {
 	display: inline;
