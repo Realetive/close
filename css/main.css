@@ -1,3 +1,26 @@
+@font-face {
+    font-family: Proxima_Nova_Bold; 
+    src: url(fonts/Proxima_Nova_Bold.otf); 
+}
+@font-face {
+    font-family: Proxima_Nova_Regular; 
+    src: url(fonts/Proxima_Nova_Regular.otf); 
+}
+@font-face {
+    font-family: Raleway-Regular; 
+    src: url(fonts/Raleway-Regular.ttf); 
+}
+@font-face {
+    font-family: Raleway-SemiBold; 
+    src: url(fonts/Raleway-SemiBold.ttf); 
+}
+body, h1, h2{
+	font-family: "Proxima_Nova_Regular", sans-serif;
+}
+.btn{
+	font-family: "Proxima_Nova_Bold", sans-serif;
+	text-transform: uppercase;
+}
 .container
 {
   position: relative;
@@ -14,7 +37,7 @@
    border-color: transparent;
    background: transparent;
    font-size: 18px;
-   font-weight: bold;
+   font-family: "Proxima_Nova_Bold", sans-serif;
 }
 .social {
 	display: inline;
@@ -72,6 +95,7 @@ a.btn:hover{
 }
 h1{
 	font-size: 46px;
+	font-weight:normal;
 }
 .carousel-caption{
 	text-align: left;
@@ -124,8 +148,8 @@ hr{
 	margin-bottom: -25px;
 }
 span{
-	font-weight: bold;
 	font-size: 15px;
+	font-weight: bold;
 }
 
 .btn-group:last-child{
@@ -148,4 +172,30 @@ footer img{
 }
 .navbar {
     border: transparent;
+}
+.contacts{
+	font-family: "Raleway-SemiBold", sans-serif;
+	font-size: 16px;
+}
+.contacts span{
+	font-family: "Raleway-Regular", sans-serif;
+	font-size: 18px;
+}
+.root{
+	font-size: 16px;
+}
+
+@media only screen and (min-width: 1350px) and (max-width: 1600px) {
+    .carousel-caption{
+	  top:300px;
+	  left: 60px;
+	  width: 480px;
+	}
+}
+@media only screen and (min-width: 600px) and (max-width: 990px) {
+    .navbar-nav{
+	margin-left: 5px;
+}
+.navbar-inverse, .navbar {
+   font-size: 16px;
 }
