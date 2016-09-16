@@ -1,0 +1,14 @@
+.row
+{
+	/*max-width: 1050px;*/
+}
+
+.gallery .col-lg-2.thumb:first-child
+{
+	margin-left: 0;
+}
+.gallery .col-lg-2.thumb
+{
+	width: 20%;
+	margin-left: 0px;
+}
