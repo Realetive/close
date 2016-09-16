@@ -63,6 +63,7 @@ body, h1, h2 {
 }
 
 .navbar-collapse {
+    background: #000;
     margin-top: 40px;
 }
 
@@ -189,11 +190,11 @@ span {
     margin-bottom: 60px;
 }
 
-.partners h2, .contacts h2, .roots h2 {
+#partners h2, #contacts h2, #roots h2 {
     color: #002b4f;
 }
 
-.contacts .item {
+#contacts .item {
     text-align: left;
     padding-right: 150px;
 }
@@ -212,12 +213,12 @@ footer img {
     border: transparent;
 }
 
-.contacts .item {
+#contacts .item {
     font-family: "Raleway-SemiBold", sans-serif;
     font-size: 16px;
 }
 
-.contacts .item span {
+#contacts .item span {
     font-family: "Raleway-Regular", sans-serif;
     font-size: 18px;
 }
@@ -263,7 +264,7 @@ footer img {
     padding-bottom: 45px;
 }
 
-.partners a {
+#partners a {
     display: block;
     width: 166px;
     height: 40px;
@@ -277,7 +278,7 @@ footer img {
         margin-left: 0px;
     }
 
-    .partners .col-lg-2 {
+    #partners .col-lg-2 {
         width: 20%;
     }
 }
@@ -289,6 +290,18 @@ footer img {
 }
 
 @media (max-width: 480px) {
+    .navbar-brand {
+        display: none;
+    }
+
+    .navbar li {
+        text-align: right;
+    }
+
+    .navbar-collapse {
+        margin-top: 0;
+    }
+
     h2 {
         padding-top: 15px;
         padding-bottom: 15px;
