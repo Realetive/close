@@ -8,6 +8,11 @@
 	margin-left: 0;
 }
 
+.gallery span
+{
+	display: block;
+}
+
 @media (min-width: 1200px) {
 	.gallery .col-lg-2
 	{
