@@ -63,7 +63,6 @@ body, h1, h2 {
 }
 
 .navbar-collapse {
-    background: #000;
     margin-top: 40px;
 }
 
@@ -130,9 +129,6 @@ h1 {
 .sale, .btn-primary {
     background-color: #0886ed;
     background-image: none;
-    width: 198px;
-    height: 60px;
-    padding-top: 15px;
 }
 
 .carousel-indicators {
@@ -281,6 +277,12 @@ footer img {
     #partners .col-lg-2 {
         width: 20%;
     }
+
+    .sale, .btn-primary {
+        width: 198px;
+        height: 60px;
+        padding-top: 15px;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -290,8 +292,16 @@ footer img {
 }
 
 @media (max-width: 480px) {
+    body {
+        padding-top: 50px;
+    }
+
     .navbar-brand {
         display: none;
+    }
+
+    .navbar-header {
+        background: #000;
     }
 
     .navbar li {
@@ -299,6 +309,7 @@ footer img {
     }
 
     .navbar-collapse {
+        background: #000;
         margin-top: 0;
     }
 
@@ -323,5 +334,44 @@ footer img {
 
     .gallery .thumb {
         text-align: center;
+    }
+
+    .carousel .container {
+        position: relative;
+        height: 210px;
+    }
+
+    .carousel {
+        max-height: 210px;
+    }
+
+    .carousel .item {
+        max-height: 210px;
+    }
+
+    .carousel-caption {
+        top: 0;
+        left: 65px;
+        width: 100%;
+    }
+
+    .carousel-indicators {
+        bottom: 0;
+    }
+
+    .carousel-caption h1 {
+        font-size: 18px;
+        width: 50%;
+        margin: 0;
+    }
+
+    .inf {
+        margin-top: 10px;
+    }
+
+    .sale, .btn-primary, .btn-lg {
+        width: 198px;
+        height: 20px;
+        padding-top: 0px;
     }
 }
