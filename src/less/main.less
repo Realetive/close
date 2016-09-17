@@ -1,11 +1,8 @@
-body, h1, h2 {
-    font-family: "Proxima_Nova_Regular", sans-serif;
-}
-
-.btn {
-    font-family: "Proxima_Nova_Bold", sans-serif;
-    text-transform: uppercase;
-}
+@import "fonts.less";
+@import "carousel.less";
+@import "common.less";
+@import "header.less";
+@import "gallery.less";
 
 .carousel .container {
     position: relative;
@@ -17,66 +14,6 @@ body, h1, h2 {
     top: 40%;
     left: 20px;
     width: 50%;
-}
-
-.navbar-inverse, .navbar {
-    border-color: transparent;
-    background: transparent;
-    font-size: 18px;
-    font-family: "Proxima_Nova_Bold", sans-serif;
-    letter-spacing: 1.8px;
-}
-
-.social {
-    display: inline;
-    text-decoration: none;
-    list-style-type: none;
-    color: #fff;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    position: relative;
-    padding: 5px;
-}
-
-.social a:hover {
-    color: #9d9d9d;
-}
-
-.navbar-collapse {
-    margin-top: 40px;
-}
-
-.navbar-nav {
-    margin-left: 150px;
-}
-
-.soc {
-    margin-top: 12px;
-    text-align: right;
-}
-
-.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .open > a {
-    background: transparent;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-}
-
-.navbar-wrapper, .navbar-fixed-top {
-    height: 120px;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2c2c2c+0,595959+0,000000+0,ffffff+100,111111+100,4c4c4c+100,ffffff+100&0.4+0,0+100 */
-    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(255, 255, 255, 0) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(255, 255, 255, 0) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(255, 255, 255, 0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#66000000', endColorstr='#00ffffff', GradientType=0); /* IE6-9 */
-    margin-top: 0;
-}
-
-.navbar-inverse .navbar-nav > li > a {
-    color: #fff;
-}
-
-.navbar-inverse .navbar-nav > li > a:hover {
-    color: #9d9d9d;
 }
 
 a.btn {
@@ -144,28 +81,6 @@ hr {
     margin-bottom: 5px;
 }
 
-.gallery {
-    &.row {
-        padding-bottom: 45px;
-    }
-
-    .thumb {
-        margin-top: 40px;
-        margin-bottom: 10px;
-    }
-
-    .thumb:first-child {
-        margin-left: 0;
-    }
-
-    span {
-        display: block;
-    }
-}
-
-.acter2:nth-child(1+5) {
-    margin-top: 0px;
-}
 
 .own {
     margin-bottom: -25px;
@@ -184,61 +99,25 @@ span {
     color: #002b4f;
 }
 
-#contacts .item {
-    text-align: left;
-    padding-right: 150px;
-}
-
 .thank {
     padding-top: 20px;
     padding-bottom: 40px;
     text-align: center;
 }
 
-footer img {
-    width: 100%;
-}
-
-.navbar {
-    border: transparent;
-}
-
-#contacts .item {
-    font-family: "Raleway-SemiBold", sans-serif;
-    font-size: 16px;
-}
-
-#contacts .item span {
-    font-family: "Raleway-Regular", sans-serif;
-    font-size: 18px;
-}
-
-@media (min-width: 1200px) {
-    /*
-    .carousel-caption {
-        top: 300px;
-        left: 60px;
-        width: 480px;
+#contacts {
+    .item {
+        text-align: left;
+        padding-right: 150px;
     }
-    */
-}
-
-/*
-@media only screen and (min-width: 1350px) and (max-width: 1600px) {
-    .carousel-caption{
-	  top:300px;
-	  left: 60px;
-	  width: 480px;
-	}
-}*/
-
-@media only screen and (min-width: 600px) and (max-width: 990px) {
-    .navbar-nav {
-        margin-left: 5px;
-    }
-
-    .navbar-inverse, .navbar {
+    .item {
+        font-family: "Raleway-SemiBold", sans-serif;
         font-size: 16px;
+    }
+
+    .item span {
+        font-family: "Raleway-Regular", sans-serif;
+        font-size: 18px;
     }
 }
 
