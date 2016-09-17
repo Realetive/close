@@ -1,3 +1,4 @@
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
@@ -8,10 +9,28 @@ module.exports = {
     },
     module: {
         loaders: [
-            { test: /\.css$/, loader: "style!css" }
+            {
+                test: /\.css$/,
+                loader: ExtractTextPlugin.extract("style-loader", "css-loader!autoprefixer-loader")
+            },
+            {
+                test: /\.less$/,
+                loader: ExtractTextPlugin.extract("style-loader", "css-loader?sourceMap?modules&camelCase=dashes&importLoaders=1&localIdentName=[local]-[hash:base64:5]!autoprefixer-loader!less-loader")
+            },
+            {
+                // simple files
+                test: /\.(jpe?g|png|gif)$/i,
+                loaders: ['file?name=assets/[name]-[sha512:hash:base64:7].[ext]']
+            },
+            {
+                // files with postfixes like "EAS-Icons.woff?1qdav3"
+                test: /\.(ttf|eot|svg|woff|woff2)(\?.+)?$/i,
+                loaders: ['file?name=assets/[name].[ext]']
+            },
         ]
     },
     plugins: [
+        new ExtractTextPlugin('[name].ag.css'),
         new HtmlWebpackPlugin({
             filename: './index.html',
             template: './templates/index.html',
