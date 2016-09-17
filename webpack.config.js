@@ -21,12 +21,12 @@ module.exports = {
             {
                 // simple files
                 test: /\.(jpe?g|png|gif)$/i,
-                loaders: ['file?name=assets/[name]-[sha512:hash:base64:7].[ext]']
+                loaders: ['file?name=img/[name]-[sha512:hash:base64:7].[ext]']
             },
             {
                 // files with postfixes like "EAS-Icons.woff?1qdav3"
                 test: /\.(ttf|eot|svg|woff|woff2)(\?.+)?$/i,
-                loaders: ['file?name=assets/[name].[ext]']
+                loaders: ['file?name=fonts/[name].[ext]']
             },
             {
                 test: /\.(cshtml|html)$/i,
