@@ -3,7 +3,7 @@ var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    entry: "./js/index.js",
+    entry: "./src/js/index.js",
     output: {
         path: __dirname + '/dist',
         filename: "bundle.ag.js"
@@ -38,7 +38,7 @@ module.exports = {
         new ExtractTextPlugin('[name].ag.css'),
         new HtmlWebpackPlugin({
             filename: 'index.html',
-            template: 'templates/index.html',
+            template: 'src/index.html',
             chunks: ['common', 'delivery-login'],
             hash: true
         }),
