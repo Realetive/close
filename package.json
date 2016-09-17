@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --config ./webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/n-ter/theater/issues"
   },
-  "homepage": "https://github.com/n-ter/theater#readme"
+  "homepage": "https://github.com/n-ter/theater#readme",
+  "devDependencies": {
+    "bootstrap": "^3.3.7",
+    "html-webpack-plugin": "^2.22.0",
+    "webpack": "^1.13.2"
+  }
 }
