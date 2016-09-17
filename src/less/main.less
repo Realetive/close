@@ -5,18 +5,6 @@
 @import "gallery.less";
 @import "~bootstrap/less/variables.less";
 
-.carousel .container {
-    position: relative;
-    height: 100vh;
-}
-
-.carousel-caption {
-    position: absolute;
-    top: 40%;
-    left: 20px;
-    width: 50%;
-}
-
 a.btn {
     color: #fff;
 }
@@ -25,47 +13,11 @@ a.btn:hover {
     color: #9d9d9d;
 }
 
-.inf {
-    border: 1px solid #fff;
-    margin-top: 20px;
-    margin-bottom: 30px;
-}
-
-.carousel-caption {
-    text-align: left;
-}
-
-.sale, .btn-primary {
-    background-color: #0886ed;
-    background-image: none;
-}
-
-.carousel-indicators {
-    bottom: 120px;
-}
-
 #about {
     background-color: #000;
     margin-top: -60px;
     color: #fff;
 }
-
-p {
-    text-align: justify;
-    line-height: 160%;
-    font-size: 16px;
-    padding-bottom: 15px;
-}
-
-hr {
-    width: 45px;
-    height: 1px;
-    margin-left: 0px;
-    background-color: #0886ed;
-    margin-top: 7px;
-    margin-bottom: 5px;
-}
-
 
 .own {
     margin-bottom: -25px;
@@ -118,70 +70,5 @@ span {
 
     #partners .col-lg-2 {
         width: 20%;
-    }
-
-    .sale, .btn-primary {
-        width: 198px;
-        height: 60px;
-        padding-top: 15px;
-    }
-}
-
-
-@media (max-width: @screen-xs) {
-    .navbar-brand {
-        display: none;
-    }
-
-    .navbar-header {
-        background: #000;
-    }
-
-    .navbar li {
-        text-align: right;
-    }
-
-    .navbar-collapse {
-        background: #000;
-        margin-top: 0;
-    }
-
-    .carousel .container {
-        position: relative;
-        height: 210px;
-    }
-
-    .carousel {
-        max-height: 210px;
-    }
-
-    .carousel .item {
-        max-height: 210px;
-    }
-
-    .carousel-caption {
-        top: 0;
-        left: 65px;
-        width: 100%;
-    }
-
-    .carousel-indicators {
-        bottom: 0;
-    }
-
-    .carousel-caption h1 {
-        font-size: 18px;
-        width: 50%;
-        margin: 0;
-    }
-
-    .inf {
-        margin-top: 10px;
-    }
-
-    .sale, .btn-primary, .btn-lg {
-        width: 198px;
-        height: 20px;
-        padding-top: 0px;
     }
 }

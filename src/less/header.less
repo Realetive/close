@@ -1,3 +1,22 @@
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
 
 .navbar-inverse, .navbar {
   border-color: transparent;
@@ -70,5 +89,24 @@
 
   .navbar-inverse, .navbar {
     font-size: 16px;
+  }
+}
+
+@media (max-width: @screen-xs) {
+  .navbar-brand {
+    display: none;
+  }
+
+  .navbar-header {
+    background: #000;
+  }
+
+  .navbar li {
+    text-align: right;
+  }
+
+  .navbar-collapse {
+    background: #000;
+    margin-top: 0;
   }
 }
