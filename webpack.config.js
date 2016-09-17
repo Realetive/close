@@ -29,7 +29,7 @@ module.exports = {
             },
             {
                 test: /\.(cshtml|html)$/i,
-                loader: "raw",
+                loader: "html",
             },
         ]
     },
