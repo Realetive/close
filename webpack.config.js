@@ -27,13 +27,17 @@ module.exports = {
                 test: /\.(ttf|eot|svg|woff|woff2)(\?.+)?$/i,
                 loaders: ['file?name=assets/[name].[ext]']
             },
+            {
+                test: /\.(cshtml|html)$/i,
+                loader: "raw",
+            },
         ]
     },
     plugins: [
         new ExtractTextPlugin('[name].ag.css'),
         new HtmlWebpackPlugin({
-            filename: './index.html',
-            template: './templates/index.html',
+            filename: 'index.html',
+            template: 'templates/index.html',
             chunks: ['common', 'delivery-login'],
             hash: true
         }),
