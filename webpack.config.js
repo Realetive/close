@@ -1,3 +1,4 @@
+var webpack = require('webpack');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
@@ -41,5 +42,12 @@ module.exports = {
             chunks: ['common', 'delivery-login'],
             hash: true
         }),
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery',
+            'window.jQuery': 'jquery',
+            'root.jQuery': 'jquery',
+            '_': 'underscore'
+        })
     ]
 }
