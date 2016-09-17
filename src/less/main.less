@@ -144,12 +144,26 @@ hr {
     margin-bottom: 5px;
 }
 
-.acter {
-    margin-top: 40px;
-    margin-bottom: 10px;
+.gallery {
+    &.row {
+        padding-bottom: 45px;
+    }
+
+    .thumb {
+        margin-top: 40px;
+        margin-bottom: 10px;
+    }
+
+    .thumb:first-child {
+        margin-left: 0;
+    }
+
+    span {
+        display: block;
+    }
 }
 
-.acter:nth-child(1-5) {
+.acter2:nth-child(1+5) {
     margin-top: 0px;
 }
 
@@ -226,18 +240,6 @@ footer img {
     .navbar-inverse, .navbar {
         font-size: 16px;
     }
-}
-
-.gallery .thumb:first-child {
-    margin-left: 0;
-}
-
-.gallery span {
-    display: block;
-}
-
-.row.gallery {
-    padding-bottom: 45px;
 }
 
 #partners a {
