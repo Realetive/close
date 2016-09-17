@@ -25,7 +25,7 @@ module.exports = {
             },
             {
                 // files with postfixes like "EAS-Icons.woff?1qdav3"
-                test: /\.(ttf|eot|svg|woff|woff2)(\?.+)?$/i,
+                test: /\.(otf|ttf|eot|svg|woff|woff2)(\?.+)?$/i,
                 loaders: ['file?name=fonts/[name].[ext]']
             },
             {
