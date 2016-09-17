@@ -3,6 +3,7 @@
 @import "common.less";
 @import "header.less";
 @import "gallery.less";
+@import "~bootstrap/less/variables.less";
 
 .carousel .container {
     position: relative;
@@ -30,17 +31,8 @@ a.btn:hover {
     margin-bottom: 30px;
 }
 
-h1 {
-    font-size: 46px;
-    font-weight: normal;
-}
-
 .carousel-caption {
     text-align: left;
-}
-
-.btn {
-    border-radius: 0;
 }
 
 .sale, .btn-primary {
@@ -50,13 +42,6 @@ h1 {
 
 .carousel-indicators {
     bottom: 120px;
-}
-
-h2 {
-    text-align: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    font-size: 36px;
 }
 
 #about {
@@ -129,11 +114,7 @@ span {
     margin-bottom: 15px;
 }
 
-@media (min-width: 1200px) {
-    .gallery .col-lg-2 {
-        width: 20%;
-        margin-left: 0px;
-    }
+@media (min-width: @screen-lg-min) {
 
     #partners .col-lg-2 {
         width: 20%;
@@ -146,17 +127,8 @@ span {
     }
 }
 
-@media (max-width: 1200px) {
-    .gallery .stub {
-        display: none;
-    }
-}
 
-@media (max-width: 480px) {
-    body {
-        padding-top: 50px;
-    }
-
+@media (max-width: @screen-xs) {
     .navbar-brand {
         display: none;
     }
@@ -172,29 +144,6 @@ span {
     .navbar-collapse {
         background: #000;
         margin-top: 0;
-    }
-
-    h2 {
-        padding-top: 15px;
-        padding-bottom: 15px;
-    }
-
-    .container {
-        margin: 0;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    p {
-        margin: 0;
-    }
-
-    .gallery hr {
-        margin: auto;
-    }
-
-    .gallery .thumb {
-        text-align: center;
     }
 
     .carousel .container {

@@ -3,10 +3,38 @@ body, h1, h2 {
 }
 
 .btn {
+  border-radius: 0;
   font-family: "Proxima_Nova_Bold", sans-serif;
   text-transform: uppercase;
 }
 
+h1 {
+  font-size: 46px;
+  font-weight: normal;
+}
+
+h2 {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 36px;
+}
+
 footer img {
   width: 100%;
+}
+
+@media (max-width: @screen-xs) {
+  body {
+    padding-top: 50px;
+  }
+
+  h2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  p {
+    margin: 0;
+  }
 }

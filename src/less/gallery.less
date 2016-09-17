@@ -3,9 +3,32 @@
     padding-bottom: 45px;
   }
 
+  .col-lg-2 {
+    @media (min-width: @screen-lg-min) {
+      width: 20%;
+      margin-left: 0px;
+    }
+  }
+
+  .stub {
+    @media (max-width: @screen-lg) {
+      display: none;
+    }
+  }
+
   .thumb {
     margin-top: 40px;
     margin-bottom: 10px;
+
+    @media (max-width: @screen-xs) {
+      text-align: center;
+    }
+  }
+
+  hr {
+    @media (max-width: @screen-xs) {
+      margin: auto;
+    }
   }
 
   .thumb:first-child {
