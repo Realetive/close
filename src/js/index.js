@@ -31,7 +31,7 @@ $(document).ready(function(){
 
     $('#carouselProgram').carousel({interval: 500});
 
-    ProgramDetails.open("sverchok");
+    //ProgramDetails.open("sverchok");
 
     $('.inf').on('click', function() {
         var title = $(this).attr('data-title');
