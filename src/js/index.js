@@ -8,6 +8,7 @@ require('../less/main.less');
 require('bootstrap/dist/js/npm');
 require('magnific-popup/dist/jquery.magnific-popup.js');
 
+var ProgramDetails = require('./program-details');
 var Mustache = require('mustache');
 
 $(document).ready(function(){
@@ -19,20 +20,15 @@ $(document).ready(function(){
         $('body,html').animate({scrollTop: top}, 1500);
     });
 
-    var program = require("./data.js");
-    var itemTemplate = require('../html/carousel-item.html');
-    for (var i in program) {
-        var item = program[i];
-        var html = Mustache.render(itemTemplate, item);
-        $(".carousel-inner").append(html);
+    var Data = require("./data.js");
+    var ItemTemplate = require('../html/carousel-item.html');
+    for (var i in Data) {
+        var item = Data[i];
+        var html = Mustache.render(ItemTemplate, item);
+        $("#carouselProgram .carousel-inner").append(html);
     }
 
-    $('#carouselProgram').carousel({interval: false});
+    $('#carouselProgram').carousel({interval: 500});
 
-    //$('.modal').modal('show');
-
-    $('.inf').on('click', function() {
-        //$('.modal').modal('show');
-        //$('#carouselDetails').carousel({interval: 500});
-    });
+    ProgramDetails.initialize();
 });
