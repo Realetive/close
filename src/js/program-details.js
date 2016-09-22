@@ -1,11 +1,10 @@
 var Mustache = require('mustache');
 var Data = require("./data.js");
-var ItemTemplate = require('../html/program-carousel-item.html');
+var ItemTemplate = require('../html/program-item.html');
+var ModalTemplate = require('../html/program-modal.html');
 
 module.exports = {
     open: function (key) {
-        var modalTemplate = require('../html/program-modal.html');
-        $('#program-details').html(Mustache.render(modalTemplate, {}))
 
         var details = Data[key];
         details.images = [];
@@ -15,16 +14,15 @@ module.exports = {
                 image: require("../program/" + key + "/img/" + i + ".jpg")
             });
         }
-        details.images[0].state = "active";
-        console.debug(details);
-        //$("#carouselDetails .carousel-inner").html('');
+
+        $('#program-details').html(Mustache.render(ModalTemplate, details));
+
         for (var i in details.images) {
-            var item = Data[i];
-            //var html = Mustache.render(ItemTemplate, item);
-            //$("#carouselDetails .carousel-inner").append(html);
+            var item = details.images[i];
+            var html = Mustache.render(ItemTemplate, item);
+            $("#program-details .showroom").append(html);
         }
 
         $('#program-details .modal').modal('show');
-        //$('#carouselDetails').carousel({interval: 500});
     }
 }

@@ -1,4 +1,4 @@
-.program-details {
+#program-details {
   width: 100%;
 
   .modal-dialog {
@@ -34,17 +34,34 @@
 
   .showroom {
 
+    overflow: hidden;
+
     img {
-      display: block;
+      display: none;
       margin: auto;
-      width: 140%;
-      border: 3px solid green;
+      width: 151%;
       text-align: center;
+    }
+
+    img:first-child {
+      display: block;
     }
   }
 
   .description {
+    > div {
+      margin-left: 25px;
+      margin-right: 25px;
+    }
 
+    .footer {
+      position: absolute;
+      bottom: 25px;
+
+      span {
+        margin-right: 10px;
+      }
+    }
     .buy-ticket {
       position: absolute;
       height: 60px;
