@@ -24,9 +24,13 @@ $(document).ready(function(){
     for (var i in program) {
         var item = program[i];
         var html = Mustache.render(itemTemplate, item);
-        console.debug(html);
         $(".carousel-inner").append(html);
     }
 
-    $('.carousel').carousel({interval: false})
+    $('.carousel').carousel({interval: false});
+
+    $('.modal').modal('show');
+
+    $('.inf').on('click', function() {
+    });
 });
