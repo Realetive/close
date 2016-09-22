@@ -30,5 +30,5 @@ $(document).ready(function(){
 
     $('#carouselProgram').carousel({interval: 500});
 
-    ProgramDetails.initialize();
+    //ProgramDetails.initialize();
 });
