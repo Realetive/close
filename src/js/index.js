@@ -6,7 +6,7 @@ require('../less/main.less');
 // scripts
 require('bootstrap/dist/js/npm');
 
-$('.carousel').carousel({interval: 2000})
+$('.carousel').carousel({interval: false})
 
 $(document).ready(function(){
 
