@@ -17,9 +17,10 @@ module.exports = {
                     "Но смогут ли Хранители уберечь семейное счастье, когда в доме вдруг появится странный непрошеный гость?",
         premier: "14/11/2015",
         director: "Наталья Лапина",
-        restrictions: "+12",
+        restrictions: "12+",
     },
     nepostoyanstvo: {
+        schedule: "все даты на текущий месяц и следующий",
         title: "Двойное непостоянство",
         author: "Пьер Карле де Шамблен де Мариво",
         imgHolder: "holder.js/900x500/auto/#666:#6a6a6a/text:Second slide",
@@ -33,9 +34,10 @@ module.exports = {
                     "мир человеческих чувств, не всегда взаимных и далеко не всегда благородных. ",
         premier: "28 марта 2016.",
         director: "Валерий Галендеев, Любовь Мочалина",
-        restrictions: "+12",
+        restrictions: "12+",
     },
     wolf: {
+        schedule: "все даты на текущий месяц и следующий",
         title: "Хочу быть волком",
         author: "Беттина Вегенаст",
         imgHolder: "holder.js/900x500/auto/#555:#5a5a5a/text:Third slide",
@@ -53,6 +55,7 @@ module.exports = {
         restrictions: "6+",
     },
     belyenochi: {
+        schedule: "все даты на текущий месяц и следующий",
         title: "Белые ночи",
         author: "Ф.М. Достоевский",
         imgHolder: "holder.js/900x500/auto/#555:#5a5a5a/text:Third slide",
@@ -65,6 +68,7 @@ module.exports = {
         restrictions: "12+",
     },
     derevnya: {
+        schedule: "все даты на текущий месяц и следующий",
         title: "Месяц в деревне",
         author: "И.С.Тургенев",
         imgHolder: "holder.js/900x500/auto/#555:#5a5a5a/text:Third slide",

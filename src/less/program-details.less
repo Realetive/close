@@ -13,6 +13,7 @@
   .modal-content {
     border-radius: 0;
     height: 100%;
+    margin-top: 160px;
   }
 
   .modal-body {
@@ -24,7 +25,10 @@
     display: flex;
     height: 100%;
   }
-
+  button.close {
+    padding-right: 10px;
+    padding-top: 7px;
+}
   .side {
     display: flex;
     flex-direction: column;
@@ -43,8 +47,9 @@
     img {
       display: none;
       margin: auto;
-      width: 151%;
+      width: 180%;
       text-align: center;
+      margin-left: -190px;
     }
 
     img:first-child {
@@ -52,29 +57,80 @@
     }
   }
 
+
   .description {
     > div {
-      margin-left: 25px;
-      margin-right: 25px;
+      margin-left: 30px;
+      margin-right: 50px;
+      padding-top: 20px;
     }
 
     .schedule {
-      color: blue;
+      color: #2683c6;
+      font-family: "Proxima_Nova_Bold", sans-serif;
+      font-size: 18px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+    }
+    .awards{
+      font-family: "Proxima_Nova_Bold", sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      padding-top: 10px;
+      color:#4a4a4a;
+    }
+    .title{
+      font-family: "Proxima_Nova_Regular", sans-serif;
+      font-size: 26px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      padding-top: 10px;
+      line-height: 1.2;
     }
 
+   .content{
+      font-family: "Proxima_Nova_Regular", sans-serif;
+      font-size: 16px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      padding-top: 10px;
+      color:#9fa3a7;
+    }
+    .author{
+      font-family: "Proxima_Nova_Regular", sans-serif;
+      font-size: 16px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      padding-top: 2px;
+    }
     .footer {
       position: absolute;
       bottom: 25px;
 
       span {
         margin-right: 10px;
+        color: #4a4a4a;
+      font-family: "Proxima_Nova_Bold", sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+      }
+      .director{
+        width: 250px;
       }
     }
     .buy-ticket {
       position: absolute;
+      width: 198px;
       height: 60px;
       bottom: 25px;
       right: 25px;
+      background-color: #2683c6;
     }
   }
 
