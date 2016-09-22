@@ -17,6 +17,7 @@
   }
 
   .carousel-control {
+    display: none;
     &.left span {
       left: 20%;
     }
@@ -53,6 +54,8 @@
     width: 198px;
     left: 0;
     margin: 0;
+
+    z-index: 20;
   }
 
   .inf {
@@ -166,4 +169,13 @@
     }
 
   }
+}
+
+.white-popup {
+  position: relative;
+  background: #FFF;
+  padding: 20px;
+  width: auto;
+  max-width: 500px;
+  margin: 20px auto;
 }
