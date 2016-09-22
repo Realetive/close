@@ -1,13 +1,25 @@
-@carousel-ht: 100vh;
+@carousel-ht-sm: 432px;
+@carousel-ht-lg: 100vh;
 
 .carousel {
 
-  height: @carousel-ht;
+  height: @carousel-ht-lg;
   margin-bottom: 60px;
 
   .container {
     position: relative;
     height: 100vh;
+  }
+
+  .carousel-control {
+  }
+
+  .carousel-control.left {
+    margin-left: -30px;
+  }
+
+  .carousel-control.right {
+    margin-right: -30px;
   }
 
   .carousel-inner > .item > img {
@@ -27,13 +39,14 @@
   }
 
   .item {
-    height: @carousel-ht;
+    height: @carousel-ht-lg;
     background-color: #777;
     background-color: #000;
   }
 
   .inf, .sale {
     display: block;
+    width: 198px;
   }
   .sale, .btn-primary {
     background-color: #0886ed;
@@ -48,16 +61,7 @@
   }
 
   .carousel-indicators {
-    bottom: 120px;
-  }
-
-  @media (min-width: @screen-lg-min) {
-
-    .sale, .btn-primary {
-      width: 198px;
-      height: 60px;
-      padding-top: 15px;
-    }
+    bottom: 1%;
   }
 
   @media (max-width: @screen-xs) {
@@ -100,4 +104,48 @@
     }
 
   }
+
+  @media (min-width: @screen-sm-min) {
+    height: @carousel-ht-sm;
+
+    h1 {
+      font-size: 24px;
+    }
+
+    h2 {
+
+    }
+
+    .item {
+      height: @carousel-ht-sm;
+    }
+
+    .carousel-caption {
+      top: 190px;
+      left: 65px;
+      width: 100%;
+
+      p {
+        font-size: 14px;
+      }
+    }
+
+    .item {
+      height: @carousel-ht-sm;
+    }
+  }
+
+  @media (min-width: @screen-md-min) {
+
+  }
+
+  @media (min-width: @screen-lg-min) {
+
+    .sale, .btn-primary {
+      width: 198px;
+      height: 60px;
+      padding-top: 15px;
+    }
+  }
+
 }
