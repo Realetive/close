@@ -24,11 +24,15 @@ $(document).ready(function(){
     var ItemTemplate = require('../html/carousel-item.html');
     for (var i in Data) {
         var item = Data[i];
+        item.key = i;
         var html = Mustache.render(ItemTemplate, item);
         $("#carouselProgram .carousel-inner").append(html);
     }
 
     $('#carouselProgram').carousel({interval: 500});
 
-    //ProgramDetails.initialize();
+    $('.inf').on('click', function() {
+        var title = $(this).attr('data-title');
+        ProgramDetails.open(title);
+    });
 });
