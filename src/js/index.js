@@ -27,10 +27,12 @@ $(document).ready(function(){
         $(".carousel-inner").append(html);
     }
 
-    $('.carousel').carousel({interval: false});
+    $('#carouselProgram').carousel({interval: false});
 
-    $('.modal').modal('show');
+    //$('.modal').modal('show');
 
     $('.inf').on('click', function() {
+        //$('.modal').modal('show');
+        //$('#carouselDetails').carousel({interval: 500});
     });
 });
