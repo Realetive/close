@@ -4,7 +4,7 @@ var ItemTemplate = require('../html/program-item.html');
 var ModalTemplate = require('../html/program-modal.html');
 
 module.exports = {
-    open: function (key) {
+    open: function (key, closedCallback) {
 
         var details = Data[key];
         details.images = [];
@@ -24,5 +24,8 @@ module.exports = {
         }
 
         $('#program-details .modal').modal('show');
+        $('#program-details .modal').on('hidden.bs.modal', function (e) {
+            closedCallback();
+        });
     }
 }

@@ -29,12 +29,15 @@ $(document).ready(function(){
         $("#carouselProgram .carousel-inner").append(html);
     }
 
-    $('#carouselProgram').carousel({interval: 500});
+    $('#carouselProgram').carousel({interval: 2000});
 
-    ProgramDetails.open("sverchok");
+    //ProgramDetails.open("sverchok");
 
     $('.inf').on('click', function() {
         var title = $(this).attr('data-title');
-        ProgramDetails.open(title);
+        ProgramDetails.open(title, function() {
+            $('#carouselProgram').carousel('cycle');
+        });
+        $('#carouselProgram').carousel('pause');
     });
 });
