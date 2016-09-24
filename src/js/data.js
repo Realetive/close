@@ -1,7 +1,7 @@
 module.exports = {
     sverchok: {
         state: "active",
-        title: "Сказка о семейном счастье, или Сверчок за очагом",
+        title: "Сказка о се&shy;мей&shy;ном счас&shy;тье, или Свер&shy;чок за оча&shy;гом",
         author: "Чарльз Диккенс",
         imgHolder: "holder.js/900x500/auto/#777:#7a7a7a/text:First slide",
         imgCover: require("../program/sverchok/img/cover.jpg"),

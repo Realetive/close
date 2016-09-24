@@ -20,7 +20,7 @@ module.exports = {
         for (var i in details.images) {
             var item = details.images[i];
             var html = Mustache.render(ItemTemplate, item);
-            $("#program-details .showroom").append(html);
+            //$("#program-details .showroom").append(html);
         }
 
         $('#program-details .modal').modal('show');

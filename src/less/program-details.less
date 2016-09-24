@@ -31,10 +31,13 @@
     padding-right: 10px;
     padding-top: 7px;
   }
-  .side {
+
+  .half {
     display: flex;
     flex-direction: column;
     flex: 1;
+    flex-basis: 50%;
+    max-width: 50%;
     height: 100%;
   }
 
@@ -42,9 +45,14 @@
     font-size: 44px;
   }
 
-  .showroom {
+  .slider {
 
     overflow: hidden;
+
+    .slide {
+      width: 100%;
+      height: 100%;
+    }
 
     img {
       display: none;
@@ -64,6 +72,8 @@
       margin-left: 30px;
       margin-right: 50px;
       padding-top: 20px;
+      text-align: justify;
+      word-break: break-all;
     }
 
     .schedule {
@@ -91,6 +101,8 @@
       font-stretch: normal;
       padding-top: 10px;
       line-height: 1.2;
+      word-break: normal;
+      text-align: left;
     }
 
     .content {
@@ -134,7 +146,14 @@
       background-color: #2683c6;
     }
   }
-
+  .modal[data-title=sverchok] {
+    .slider {
+      .slide-1 {
+        background: url('../program/sverchok/img/1.jpg') no-repeat center;
+        background-size: cover;
+      }
+    }
+  }
   @media (max-width: @screen-md-max) {
 
   }
@@ -149,8 +168,35 @@
       height: auto;
     }
 
-    .side {
-      flex-direction: row;
+    .modal-body {
+    }
+
+    .wrapper {
+      clear: both;
+    }
+
+    .half {
+      display: block;
+      max-width: 100%;
+
+      &.slider {
+        width: 100%;
+        height: 200px;
+      }
+    }
+
+    .description {
+      >div {
+        margin: auto 20px;
+      }
+      .footer, .buy-ticket {
+        position: static;
+      }
+
+      .btn.buy-ticket {
+        display: block;
+        margin: 20px auto;
+      }
     }
   }
 }
