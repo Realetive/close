@@ -5,6 +5,7 @@
   .modal {
     z-index: 6000;
   }
+
   .modal-dialog {
     width: @screen-lg-min - 50px;
     height: 640px;
@@ -13,7 +14,7 @@
   .modal-content {
     border-radius: 0;
     height: 100%;
-    margin-top: 160px;
+    margin-top: 40px;
   }
 
   .modal-body {
@@ -23,6 +24,7 @@
 
   .wrapper {
     display: flex;
+    flex-wrap: wrap;
     height: 100%;
   }
   button.close {
@@ -134,8 +136,23 @@
     }
   }
 
-  @media (min-width: @screen-md-max) {
+  @media (max-width: @screen-md-max) {
 
+  }
+
+  @media (max-width: @screen-xs-max) {
+    .modal-dialog {
+      width: 95%;
+    }
+
+    .modal-content {
+      margin-top: 15px;
+      height: auto;
+    }
+
+    .side {
+      flex-direction: row;
+    }
   }
 }
 
