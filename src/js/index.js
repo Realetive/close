@@ -8,8 +8,8 @@ require('../less/main.less');
 require('bootstrap/dist/js/npm');
 require('magnific-popup/dist/jquery.magnific-popup.js');
 
+var Carousel = require('../carousel');
 var ProgramDetails = require('./program-details');
-var Mustache = require('mustache');
 
 $(document).ready(function(){
 
@@ -20,24 +20,7 @@ $(document).ready(function(){
         $('body,html').animate({scrollTop: top}, 1500);
     });
 
-    var Data = require("./data.js");
-    var ItemTemplate = require('../html/carousel-item.html');
-    for (var i in Data) {
-        var item = Data[i];
-        item.key = i;
-        var html = Mustache.render(ItemTemplate, item);
-        $("#carouselProgram .carousel-inner").append(html);
-    }
-
-    $('#carouselProgram').carousel({interval: 2000});
-
+    Carousel.initialize();
+    Carousel.onDetails(ProgramDetails.open);
     //ProgramDetails.open("sverchok");
-
-    $('.inf').on('click', function() {
-        var title = $(this).attr('data-title');
-        ProgramDetails.open(title, function() {
-            $('#carouselProgram').carousel('cycle');
-        });
-        $('#carouselProgram').carousel('pause');
-    });
 });

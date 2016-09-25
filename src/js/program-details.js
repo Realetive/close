@@ -1,6 +1,5 @@
 var Mustache = require('mustache');
 var Data = require("./data.js");
-var ItemTemplate = require('../html/program-item.html');
 var ModalTemplate = require('../html/program-modal.html');
 
 module.exports = {
@@ -16,12 +15,6 @@ module.exports = {
         }
 
         $('#program-details').html(Mustache.render(ModalTemplate, details));
-
-        for (var i in details.images) {
-            var item = details.images[i];
-            var html = Mustache.render(ItemTemplate, item);
-            //$("#program-details .showroom").append(html);
-        }
 
         $('#program-details .modal').modal('show');
         $('#program-details .modal').on('hidden.bs.modal', function (e) {
