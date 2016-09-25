@@ -1,3 +1,5 @@
+require("./styles.less");
+
 var Mustache = require('mustache');
 var Data = require("../js/data.js");
 var CarouselTemplate = require('./carousel.html');
@@ -13,7 +15,7 @@ module.exports = {
             $("#carouselProgram .carousel-inner").append(Mustache.render(ItemTemplate, item));
         }
 
-        $('#carouselProgram').carousel({interval: 2000});
+        $('#carouselProgram').carousel({interval: false});
     },
     pause: function () {
         $('#carouselProgram').carousel('pause');
