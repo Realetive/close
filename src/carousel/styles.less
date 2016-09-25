@@ -11,7 +11,7 @@
   margin-bottom: 60px;
   background-color: #000;
 
-  .container, .item {
+  .container, .item, .image {
     height: @carousel-ht-lg;
   }
 
@@ -36,6 +36,9 @@
   }
 
   .carousel-inner > .item > .image {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
   }
 
@@ -86,7 +89,7 @@
   @media (max-width: @screen-md-max) {
     height: @carousel-ht-md;
 
-    .container, .item {
+    .container, .item, .image {
       height: @carousel-ht-md;
     }
 
@@ -103,7 +106,7 @@
   @media (max-width: @screen-sm-max) {
     height: @carousel-ht-sm;
 
-    .container, .item {
+    .container, .item, .image {
       height: @carousel-ht-sm;
     }
 
@@ -131,7 +134,7 @@
 
     height: @carousel-ht-xs;
 
-    .container, .item {
+    .container, .item, .image {
       height: @carousel-ht-xs;
     }
 
