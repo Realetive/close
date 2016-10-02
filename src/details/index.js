@@ -18,8 +18,11 @@ module.exports = {
 
         $('#program-details').html(Mustache.render(ModalTemplate, details));
 
+        $('#details-slider').carousel({interval: 2000});
+
         $('#program-details .modal').modal('show');
         $('#program-details .modal').on('hidden.bs.modal', function (e) {
+            $('#details-slider').carousel(0);
             closedCallback();
         });
     }

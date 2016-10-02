@@ -15,7 +15,7 @@ module.exports = {
             $("#carouselProgram .carousel-inner").append(Mustache.render(ItemTemplate, item));
         }
 
-        $('#carouselProgram').carousel({interval: false});
+        $('#carouselProgram').carousel({interval: 2000});
     },
     pause: function () {
         $('#carouselProgram').carousel('pause');
