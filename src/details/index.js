@@ -1,6 +1,8 @@
+require("./styles.less");
+
 var Mustache = require('mustache');
-var Data = require("./data.js");
-var ModalTemplate = require('../html/program-modal.html');
+var Data = require("../js/data.js");
+var ModalTemplate = require('./modal.html');
 
 module.exports = {
     open: function (key, closedCallback) {

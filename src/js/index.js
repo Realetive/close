@@ -9,7 +9,7 @@ require('bootstrap/dist/js/npm');
 require('magnific-popup/dist/jquery.magnific-popup.js');
 
 var Carousel = require('../carousel');
-var ProgramDetails = require('./program-details');
+var ProgramDetails = require('../details');
 
 $(document).ready(function(){
 
