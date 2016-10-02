@@ -22,7 +22,6 @@ module.exports = {
 
         $('#program-details .modal').modal('show');
         $('#program-details .modal').on('hidden.bs.modal', function (e) {
-            $('#details-slider').carousel(0);
             closedCallback();
         });
     }
