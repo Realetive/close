@@ -4,9 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "postinstall": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack --config ./webpack.config.js",
-    "dev": "webpack-dev-server --content-base /distrib --host 0.0.0.0"
+    "build": "webpack --config ./webpack.config.js",
+    "dev": "webpack-dev-server --content-base /dist --host 0.0.0.0",
+    "bs": "browser-sync start --config bs-config.js",
+    "start": "npm run dev && npm run bs"
   },
   "repository": {
     "type": "git",
@@ -31,7 +34,8 @@
     "mustache": "^2.2.1",
     "raw-loader": "^0.5.1",
     "style-loader": "^0.13.1",
-    "webpack": "^1.13.2"
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.16.2"
   },
   "dependencies": {
     "jquery": "^3.1.0",
