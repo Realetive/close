@@ -29,8 +29,8 @@ a.btn:hover {
   border-width: 60px 50vw 0 50vw;
   border-color: #000000 transparent transparent transparent;
   line-height: 0px;
-  _border-color: #000000 #ffffff #ffffff #ffffff;
-  _filter: progid:DXImageTransform.Microsoft.Chroma(color='#ffffff');
+  _border-color: #000000 #000000 #000000 #000000;
+  _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
   margin-bottom: -60px;
   z-index: 700;
   position: relative;
@@ -45,9 +45,9 @@ a.btn:hover {
   height: 0;
   border-style: solid;
   border-width: 0 50vw 60px 0px;
-  border-color: transparent transparent #ffffff transparent;
+  border-color: transparent transparent #000000 transparent;
   line-height: 0px;
-  _border-color: #000000 #000000 #ffffff #000000;
+  _border-color: #000000 #000000 #000000 #000000;
   _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
   z-index: 600;
   position: relative;
@@ -60,9 +60,9 @@ a.btn:hover {
   height: 0;
   border-style: solid;
   border-width: 0 0px 60px 50vw;
-  border-color: transparent transparent #ffffff transparent;
+  border-color: transparent transparent #000000 transparent;
   line-height: 0px;
-  _border-color: #000000 #000000 #ffffff #000000;
+  _border-color: #000000 #000000 #000000 #000000;
   _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
   z-index: 600;
   position: relative;
@@ -81,6 +81,13 @@ a.btn:hover {
   .col-md-4 {
     padding-left: 0px;
   }
+
+  .lapina__photo {
+    background: url(../img/lapina.jpg) no-repeat center;
+    background-size: cover;
+    padding-bottom: 57%;
+  }
+
   h2 {
     text-align: left;
     margin-top: 60px;
@@ -120,7 +127,7 @@ span {
 }
 
 #partners h2, #contacts h2, #roots h2 {
-  color: #002b4f;
+  color: #fff;
 }
 
 .thank {
